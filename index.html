@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Règles graduées</title>
+    
+    <style>
+        .body{
+            display:flex;
+            flex-direction: column;
+            margin:30px;
+        }
+        .regle{
+            display: flex;
+            justify-content: space-between; /* Répartit les ticks uniformément */
+            align-items: flex-end; /* Aligne les ticks en bas */
+            width: 100%;
+            height: auto; /* Ajuste selon tes besoins */
+            border-top: 3px solid black; /* Ligne de base pour les ticks */
+            position: relative;
+            margin-top: 55px;
+            page-break-inside: avoid;
+        }
+        .slot{
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centre le label sous le tick */
+            position: relative;
+        }
+        .tick{
+            width:3px;
+            height: 20px;
+            background-color: black;
+            position: relative;
+            top:-10px;
+        }
+        .label{
+            margin-top: -10px; /* Espace entre le tick et le label */
+            font-size: 24px;
+            text-align: center;
+            border-radius: 10px;
+            border:2px solid black;
+            width:50px;
+            height:30px;
+        }
+    </style>
+</head>
+<body>
+    <script type="module" src="./index.JS"></script>
+</body>
+</html>
